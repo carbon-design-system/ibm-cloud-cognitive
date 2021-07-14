@@ -49,10 +49,4 @@ APIKeyDownloader.propTypes = {
    */
   linkText: PropTypes.string,
 };
-
-APIKeyDownloader.defaultProps = {
-  apiKey: '',
-  bodyText: '',
-  fileName: '',
-  linkText: '',
-};
+APIKeyDownloader.defaultProps = {};
