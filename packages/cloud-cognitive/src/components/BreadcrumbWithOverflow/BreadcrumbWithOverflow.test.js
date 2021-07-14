@@ -143,7 +143,7 @@ describe(BreadcrumbWithOverflow.displayName, () => {
     );
 
     expect(visibleBreadcrumbs[0]).toHaveTextContent(breadcrumbContent[0]);
-    // last item is last breadcrum
+    // last item is last breadcrumb
     expect(visibleBreadcrumbs[visibleBreadcrumbs.length - 1]).toHaveTextContent(
       breadcrumbContent[4]
     );

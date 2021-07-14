@@ -33,7 +33,7 @@ export const APIKeyDownloader = ({ apiKey, bodyText, fileName, linkText }) => {
 APIKeyDownloader.displayName = componentName;
 APIKeyDownloader.propTypes = {
   /**
-   * the api key the user recieves
+   * the api key the user receives
    */
   apiKey: PropTypes.string,
   /**

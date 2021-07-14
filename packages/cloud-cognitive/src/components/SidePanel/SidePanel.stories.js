@@ -75,7 +75,7 @@ const defaultStoryProps = {
   title:
     'Incident management for your application, testing a very long title to see how this behaves with a longer title',
   subtitle:
-    'This is some text that would talk about how you could investigate incidednt management within this side panel.',
+    'This is some text that would talk about how you could investigate incident management within this side panel.',
 };
 
 const headerData = [

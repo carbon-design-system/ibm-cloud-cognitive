@@ -1,0 +1,62 @@
+{
+    "version": "0.1",
+    "language": "en",
+    "enabledLanguageIds": [
+        "css",
+        "graphql",
+        "html",
+        "json",
+        "javascript",
+        "javascriptreact",
+        "markdown",
+        "mdx",
+        "plaintext",
+        "restructuredtext",
+        "sass",
+        "scss",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+    "ignorePaths": [
+        "cdai",
+        "coverage",
+        "css",
+        "es",
+        "lib",
+        "node_modules", // this will ignore anything the node_modules directory
+        "**/node_modules", // the same for this one
+        "**/node_modules/**", // the same for this one
+        "package.json",
+        "results",
+        "scss",
+        "security",
+        "*.snap",
+        "storybook-static"
+    ],
+    "words": [
+        "apikey",
+        "cdai",
+        "classname",
+        "codesandbox",
+        "contenteditable",
+        "describedby",
+        "docgen",
+        "flatpickr",
+        "kubernetes",
+        "labelledby",
+        "listitem",
+        "pconsole",
+        "rerender",
+        "storysource",
+        "stylelint",
+        "tagset",
+        "tabbable",
+        "tabindex",
+        "tearsheet",
+        "tearsheets",
+        "uuidv",
+        "WCAG"
+    ]
+}

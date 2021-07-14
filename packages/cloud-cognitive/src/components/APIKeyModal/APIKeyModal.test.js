@@ -152,7 +152,6 @@ describe(name, () => {
       nextStepButtonText: 'Next step',
       downloadable: false,
     };
-
     const { rerender, getByPlaceholderText, getByText } = render(
       <APIKeyModal {...props} />
     );

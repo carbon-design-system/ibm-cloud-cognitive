@@ -67,7 +67,7 @@ Or try searching code sandbox for ibm-cloud-cognitive.
 ### Packages
 
 You can find example projects using the components in
-[examples folder](../../packages/examples/cloud-cognitivfe).
+[examples folder](../../packages/examples/cloud-cognitive).
 
 ## Usage
 

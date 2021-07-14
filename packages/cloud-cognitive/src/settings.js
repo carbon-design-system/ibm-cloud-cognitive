@@ -23,7 +23,7 @@ export const carbon = {
 
 // Check that a component is enabled. This function returns a stub which checks
 // the component status on first use and then renders as the component or as
-// a Canary placeholder initialised with the name of the replaced component.
+// a Canary placeholder initialized with the name of the replaced component.
 // Note that the returned stub carries any other properties which had already
 // been assigned (eg propTypes, displayName, etc).
 pkgSettings.checkComponentEnabled = (component, name) => {
