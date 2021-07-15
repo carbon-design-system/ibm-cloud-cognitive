@@ -24,6 +24,11 @@ module.exports = {
     '@carbon/storybook-addon-theme/register',
   ],
 
+  reactOptions: {
+    //fastRefresh: true, -- this option would be nice, but seems to cause errors, see https://github.com/storybookjs/storybook/issues/13745
+    strictMode: true,
+  },
+
   stories: sync(resolve(__dirname, '..', '..', '**/*.stories.*')).filter(
     (story) =>
       !story.includes('node_modules') && !story.includes('DISPLAY_NAME')
