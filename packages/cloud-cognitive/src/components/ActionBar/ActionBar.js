@@ -12,7 +12,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { pkg } from '../../settings';
-import ReactResizeDetector from 'react-resize-detector';
+import { useResizeDetector } from 'react-resize-detector';
 
 // Carbon and package components we use.
 import { Button } from 'carbon-components-react';
@@ -193,23 +193,29 @@ export let ActionBar = React.forwardRef(
       checkFullyVisibleItems();
     };
 
-    return (
-      <ReactResizeDetector onResize={handleResize}>
-        <div {...rest} className={cx([blockClass, className])} ref={ref}>
-          <ReactResizeDetector onResize={handleActionBarItemsResize}>
-            {hiddenSizingItems}
-          </ReactResizeDetector>
+    useResizeDetector({
+      onResize: handleActionBarItemsResize,
+      targetRef: sizingRef,
+    });
 
-          <div
-            ref={refDisplayedItems}
-            className={cx([
-              `${blockClass}__displayed-items`,
-              { [`${blockClass}__displayed-items--right`]: rightAlign },
-            ])}>
-            {displayedItems}
-          </div>
+    const { ref: outerRef } = useResizeDetector({
+      onResize: handleResize,
+      targetRef: ref,
+    });
+
+    return (
+      <div {...rest} className={cx([blockClass, className])} ref={outerRef}>
+        {hiddenSizingItems}
+
+        <div
+          ref={refDisplayedItems}
+          className={cx([
+            `${blockClass}__displayed-items`,
+            { [`${blockClass}__displayed-items--right`]: rightAlign },
+          ])}>
+          {displayedItems}
         </div>
-      </ReactResizeDetector>
+      </div>
     );
   }
 );
